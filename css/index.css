@@ -11,16 +11,38 @@
     animation: slide 10s linear;
     animation-iteration-count: infinite;
 }
+h3{
+    align-self: flex-start;
+    margin-left: 4vw;
+    font-weight: normal;
+    
+}
 .h{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .v{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.h-even{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.v-even{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.h-left{
+    display: flex;
+    align-items: center;
+
 }
 .h-center{
     display: flex;
@@ -41,10 +63,10 @@ body{
 .navbar{
     transition: .4s ease-in-out;
     height: 70px;
-    width: 97vw;
+    width: 95vw;
     align-self: center;
     border-radius: .3rem;
-    background:linear-gradient(90deg,rgb(255, 0, 43),rgb(255, 0, 43),rgb(255, 0, 43),rgb(252, 38, 73),rgb(250, 72, 102)) ;
+    background:linear-gradient(110deg,rgb(255, 0, 43),rgb(255, 0, 43),rgb(255, 0, 43),rgb(252, 38, 73),rgb(250, 72, 102)) ;
 }
 .stopScroll{
     z-index: 5;
@@ -62,7 +84,7 @@ body{
     display: flex;
     width: 100%;
     height: 90px;
-    padding: .4rem 1rem .4rem 4rem;
+    padding: .4rem 1rem .4rem 8%;
     
 }
 .logo>img{
@@ -73,10 +95,32 @@ body{
 .content-top>p{
     font-size: 1.2rem;
 }
-
-
-
-
+.card{
+    width: 20%;
+    height:calc((7 / 12) * 26vw);
+    margin: 1rem .3rem;
+    padding: 0;
+    border:none;
+}
+.card>.h-left{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.card-img{
+    width: 100%;
+    height:calc((7 / 12) * 21.7vw);
+    object-fit: cover;
+}
+input:checked{
+    background-color: turquoise;
+}
+input[type="radio"]{
+    margin: 0;
+    padding: 0;
+    width: .9em;
+    height: .9rem;
+    cursor: pointer;
+}
 @keyframes slide{
     0%{  background-position: left;  }
     50%{  background-position: right;  }
@@ -101,3 +145,28 @@ body{
     width: 40%;
     background-color: white;
 } */
+
+@media (orientation:portrait){
+    .h-center{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .col-md-9{
+        width: 100%;
+    }
+    .card{
+        width:45vw;
+        margin: none;
+        height: 45vw;
+    }
+    .card-img{
+        height: 40vw;
+    }
+    h3{
+        align-self: center;
+        margin: 0;
+    }
+    .line{
+        width: 90vw;
+    }
+}
