@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    var popup=document.querySelector('.popup');
+    var sub=document.querySelector('button #sub');
     var nav=$('nav');
     $(window).bind('scroll',function(){
 
@@ -12,5 +14,8 @@ $(document).ready(function(){
             $('.container-fluid').css('padding-top','0px');
 
         }
+    })
+    sub.click(function(){
+        popup.css('z-index','24');
     })
 })
