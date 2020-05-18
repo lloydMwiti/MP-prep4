@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    var popup=document.querySelector('.popup');
-    var sub=document.querySelector('button #sub');
+    var popup=$('.popup');
+    var sub=$('.sub');
+    var hide=$('.btncancel');
     var nav=$('nav');
     $(window).bind('scroll',function(){
 
@@ -16,6 +17,9 @@ $(document).ready(function(){
         }
     })
     sub.click(function(){
-        popup.css('z-index','24');
+        popup.addClass('show');
+    })
+    hide.click(function(){
+        popup.removeClass('show');
     })
 })

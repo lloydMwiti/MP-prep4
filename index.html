@@ -189,7 +189,19 @@
                     </div>
                     </div>
             </div>
-            <div class="p-size col-md-9">naniiii</div>
+            
+            <div class="p-size col-md-9 v-left">
+                <br>
+                &nbsp
+                &nbsp
+                &nbsp
+                &nbsp
+                &nbsp
+               <div>how many pizza do you want :
+                <input type="number" min="1" name="" id="qtty" placeholder="" value="1"></div>
+                <br>
+                <div class="h-center w-100"><p>do you want home delivery</p> <input type="checkbox" name="" id="deliver"><label for="deliver">yes</label></div>
+            </div>
         </div>
         <center>
             <button class="sub" id="sub"> checkout</button>
@@ -198,12 +210,26 @@
     </div>
     <div class="popup">
         <div class="checkout">
-
+            <div class="top-check">
+                <button class="btncancel bg-danger">cancel</button>
+            </div>
+            <div class="body-check v-left">
+                Your total comes to :
+                <p class="form-control w-25"></p>                
+                <div class="location v-left w-100">
+                Enter your home addres
+                <input type="text" class=" form-control w-75">
+                <p></p>
+                Delivery cost is :
+                <p class="form-control w-25"></p>
+                </div>
+            </div>
+           
         </div>
     </div>
     
     <script src="js/jquery-3.5.0.min.js"></script>
-    <!-- <script src="js/checkout.js"></script> -->
+    <script src="js/checkout.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,3 @@
-var popup=document.querySelector('.popup');
-var sub=document.querySelector('.sub');
+var size=$('input[name="size"]:checked').value;
+var crust=$('input[name="crust"]:checked').value;
 
-sub.click(function(){
-    popup.css('z-index','24');
-})
