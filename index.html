@@ -17,7 +17,7 @@
         <div class="nav-right">something else</div>
     </nav>
     <br>
-    <div class="container-fluid"> 
+    <form onsubmit="return false" class="container-fluid" name="menu"> 
         <div class="row">
             <div class="col-md-12 v-center">
                 <br>
@@ -48,7 +48,7 @@
                 <div class="card c h-center">
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
-                        <input type="radio" name="size" id="size" value="1">
+                        <input type="radio" class="sizein" name="size" id="size" value="1">
                         <label for="size">&nbsp small</label> 
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                 <div class="card c h-center">
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
-                        <input type="radio" name="size" id="size1" value="2">
+                        <input type="radio" class="sizein" name="size" id="size1" value="2">
                         <label for="size1">&nbsp medium </label>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="card c h-center">
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
-                        <input type="radio" name="size" id="size2" value="3">
+                        <input type="radio" class="sizein" name="size" id="size2" value="3">
                         <label for="size2">&nbsp large </label>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                 <div class="card c h-center">
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
-                        <input type="radio" name="size" id="size3" value="4">
+                        <input type="radio" class="sizein" name="size" id="size3" value="4">
                         <label for="size3">&nbsp x-large </label>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping" value="1">
+                            <input type="checkbox" class="toping" name="toping" id="toping" value="1">
                             <label for="toping">pepperoni</label>
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping1" value="2">
+                            <input type="checkbox" class="toping" name="toping" id="toping1" value="2">
                             <label for="toping1">mushrooms</label>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                     <div class="card v-center">
                         <img src="images/woj.jpg" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping2" value="3">
+                            <input type="checkbox" class="toping" name="toping" id="toping2" value="3">
                             <label for="toping2">onions</label>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping3" value="4">
+                            <input type="checkbox" class="toping" name="toping" id="toping3" value="4">
                             <label for="toping3">sausage</label>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping4" value="4">
+                            <input type="checkbox" class="toping" name="toping" id="toping4" value="4">
                             <label for="toping4">bacon</label>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping5" value="4">
+                            <input type="checkbox" class="toping" name="toping" id="toping5" value="4">
                             <label for="toping5">extra cheese</label>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping6" value="4">
+                            <input type="checkbox" class="toping" name="toping" id="toping6" value="4">
                             <label for="toping6">black olives</label>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                     <div class="card v-center">
                         <img src="images/pizza-logo.png" alt="" class="card-img">
                         <div class="h-left ">
-                            <input type="checkbox" name="toping" id="toping7" value="4">
+                            <input type="checkbox" class="toping" name="toping" id="toping7" value="4">
                             <label for="toping7">green pepper</label>
                         </div>
                     </div>
@@ -198,16 +198,23 @@
                 &nbsp
                 &nbsp
                <div>how many pizza do you want :
-                <input type="number" min="1" name="" id="qtty" placeholder="" value="1"></div>
+                <input type="number" min="1" name="num" id="qtty" placeholder="" value="1"></div>
                 <br>
-                <div class="h-center w-100"><p>do you want home delivery</p> <input type="checkbox" name="" id="deliver"><label for="deliver">yes</label></div>
+                <div class="h-center w-100"><p>do you want home delivery</p> <input type="checkbox" name="deliver" id="deliver"><label for="deliver">yes</label></div>
             </div>
         </div>
-        <center>
+        <center class="v-center ">
+            <br>
+            <br>
+            <div action=""  name="form" class=" " id="unseen">
+                <input type="number" min="1" max="4" name="" id="fsize">
+                <input type="number" min="1" max="4" name="" id="fcrust">
+                <input type="number" min="1" max="4" name="" id="ftoping">
+            </div>
             <button class="sub" id="sub"> checkout</button>
         </center>
          
-    </div>
+    </form>
     <div class="popup">
         <div class="checkout">
             <div class="top-check">
@@ -215,7 +222,7 @@
             </div>
             <div class="body-check v-left">
                 Your total comes to :
-                <p class="form-control w-25"></p>                
+                <p class="form-control w-25 " id="total"></p>                
                 <div class="location v-left w-100">
                 Enter your home addres
                 <input type="text" class=" form-control w-75">

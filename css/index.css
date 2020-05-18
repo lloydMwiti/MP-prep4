@@ -2,7 +2,7 @@
    transition: 0ms;
    font-size: 1.1rem;
    outline:none;
-   
+   user-select: none;
 }
 p{
     background-color: white;
@@ -136,9 +136,12 @@ body{
 .content-top>p{
     font-size: 1.2rem;
 }
+#unseen,#unseen>*{
+    display: none;
+}
 .card{
     width: 20%;
-    min-width: 9rem;
+    min-width: 9.7rem;
     margin: 1rem .3rem;
     padding: 0;
     border:none;
@@ -286,5 +289,12 @@ input[type="radio"]{
     }
     .sub{
         width: 90vw;
+    }
+    .checkout{
+        width: 85vw;
+
+    }
+    .checkout .w-75{
+        width: 85%;
     }
 }

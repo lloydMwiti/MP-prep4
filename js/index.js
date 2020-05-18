@@ -5,7 +5,7 @@ $(document).ready(function(){
     var nav=$('nav');
     $(window).bind('scroll',function(){
 
-        if ($(window).scrollTop() > 70){
+        if ($(window).scrollTop() > 90){
             $('.container-fluid').css('padding-top','70px');
             $('.navbar').css('box-shadow','0 0.15rem .6rem -.2rem blue');
             nav.addClass('stopScroll');
@@ -16,10 +16,5 @@ $(document).ready(function(){
 
         }
     })
-    sub.click(function(){
-        popup.addClass('show');
-    })
-    hide.click(function(){
-        popup.removeClass('show');
-    })
+    
 })
