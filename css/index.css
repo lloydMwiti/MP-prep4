@@ -31,7 +31,7 @@ input[type="checkbox"] + label{
     
 }
 .form-control{
-    padding: .8rem .2rem;
+    
     font-size: 1rem;
     width: 2rem;
 }
@@ -103,6 +103,8 @@ body{
     overflow-x: hidden;
 }
 .navbar{
+    color: white;
+    
     transition: .4s ease-in-out;
     height: 70px;
     width: 95vw;

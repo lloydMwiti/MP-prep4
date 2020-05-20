@@ -65,6 +65,7 @@ $(document).ready(function(){
         
         
         sub.click(function (){
+                let delTotal=document.querySelectorAll('#deliveryTotal');
                 let topping=parseInt( document.querySelectorAll('input[class="toping"]:checked').length,10);
                 let topingChecked=(topping* 50);
                 let total=(((((fSize.val()-1)*250)+500)+((fCrust.val()-1)*50))+ topingChecked)* parseInt(num.val(),10);             
