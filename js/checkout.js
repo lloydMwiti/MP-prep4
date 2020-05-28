@@ -76,10 +76,23 @@ $(document).ready(function(){
                                 loc.css('display','none');
                                 
                         }else{
+                                loc.attributes.required="required";
                                 loc.css('display','flex');
                         }
                 }else{
                         alert('plaese fill out all fields');
+                }
+        })
+        $('.cls').click(function(){
+                var loc=$('#loc');
+                if(loc.val() != "" ){
+                        alert("your pizza will be delivered in 30 - 50 minutes ");
+                        location.reload(true);
+                }
+                else{
+                         alert('your pizza will be ready in an hour ,pick it up at your nearest store');
+                         location.reload(true);
+
                 }
         })
         cancel.click(function(){

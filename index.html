@@ -49,7 +49,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size" value="1">
-                        <label for="size">&nbsp small</label> 
+                        <label for="size">&nbsp small starts:500</label> 
                     </div>
                 </div>
                 <!-- cardstart -->
@@ -57,7 +57,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size1" value="2">
-                        <label for="size1">&nbsp medium </label>
+                        <label for="size1">&nbsp medium starts:750</label>
                     </div>
                 </div>
                 <!-- cardstart -->
@@ -65,7 +65,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size2" value="3">
-                        <label for="size2">&nbsp large </label>
+                        <label for="size2">&nbsp large starts:1000</label>
                     </div>
                 </div>
                 <!-- cardstart -->
@@ -73,7 +73,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size3" value="4">
-                        <label for="size3">&nbsp x-large </label>
+                        <label for="size3">&nbsp x-large starts:1250</label>
                     </div>
                 </div>
                 </div>
@@ -84,6 +84,14 @@
                 <br>
 
                 <div class="row h-center">
+                    <div class="w-80">
+                        Prices are:<ul>
+                            <li>thin crust(no charge) </li>
+                            <li>thicc crust( + 50) </li>
+                            <li>deep crust( + 100) </li>
+                            <li>cheese stuffed( + 150) </li>
+                        </ul>
+                    </div>
                     <!-- cardstart -->
                     <div class="card v-center">
                         <img src="images/crustthin.jpg" alt="" class="card-img">
@@ -119,7 +127,8 @@
                     </div>
             </div>
             <div class="p-toping col-md-9 v-center">
-                <br><h3>select your toping</h3>
+                <br><h3>select your toping
+                <p>Each topping is 50 ksh</p></h3>
                 <br>
 
                 <div class="row h-center">
@@ -224,13 +233,16 @@
                 <p class="form-control w-25 " id="total"></p>                
                 <div class="location v-left w-100">
                 Enter your home addres
-                <input type="text" class=" form-control w-75">
+                <input type="text" class=" form-control w-75" id="loc">
                 <p></p>
                 Delivery cost is :
                 <p class="form-control w-25" id="deliveryTotal">
                     ksh.200
                 </p>
                 </div>
+            </div>
+            <div class="center w-100">
+                <button class="btncancel cls bg-primary">place order</button>
             </div>
            
         </div>

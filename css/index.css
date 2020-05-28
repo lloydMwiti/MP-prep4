@@ -158,7 +158,9 @@ body{
     height:calc((7 / 12) * 20vw);
     object-fit: cover;
 }
-
+.w-80{
+    width: 80%;
+}
 input[type="radio"]{
     margin: 0;
     padding: 0;
@@ -173,7 +175,7 @@ input[type="radio"]{
     margin-right: .5rem;
 }
 .c{
-    max-height: 3.2rem;
+    max-height: 4.5rem;
     box-shadow: none;
     width: calc(25% - 1rem);
     max-width: 100vw;
