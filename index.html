@@ -42,6 +42,15 @@
             
             <div class="p-size col-md-11 v-center"><br>
             <br><h3>choose your size pizza</h3>
+            <div class="w-80">
+                Prices are:<ul>
+                    <li>Small (starts at 500) </li>
+                    <li>Medium (starts at 750) </li>
+                    <li>Large (starts at 1000) </li>
+                    <li>x-large (starts at 1250) </li>
+                    
+                </ul>
+            </div>
             <br>
                 <div class="row h-center">
                 <!-- cardstart -->
@@ -49,7 +58,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size" value="1">
-                        <label for="size">&nbsp small starts:500</label> 
+                        <label for="size">&nbsp small </label> 
                     </div>
                 </div>
                 <!-- cardstart -->
@@ -57,7 +66,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size1" value="2">
-                        <label for="size1">&nbsp medium starts:750</label>
+                        <label for="size1">&nbsp medium </label>
                     </div>
                 </div>
                 <!-- cardstart -->
@@ -65,7 +74,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size2" value="3">
-                        <label for="size2">&nbsp large starts:1000</label>
+                        <label for="size2">&nbsp large </label>
                     </div>
                 </div>
                 <!-- cardstart -->
@@ -73,7 +82,7 @@
                     <img src="images/pizza-logo.png" alt="" class="card-img">
                     <div class="h-left ">
                         <input type="radio" class="sizein" name="size" id="size3" value="4">
-                        <label for="size3">&nbsp x-large starts:1250</label>
+                        <label for="size3">&nbsp x-large </label>
                     </div>
                 </div>
                 </div>
@@ -229,6 +238,8 @@
                 <button class="btncancel bg-danger">cancel</button>
             </div>
             <div class="body-check v-left">
+                Your selection was:
+                <p id="selection" class="form-control w-75"></p>
                 Your total comes to :
                 <p class="form-control w-25 " id="total"></p>                
                 <div class="location v-left w-100">

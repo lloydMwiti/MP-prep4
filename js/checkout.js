@@ -20,24 +20,33 @@ $(document).ready(function(){
         let popup=$('.popup');
         let cancel=$('.btncancel');
         let tot=document.getElementById('total');
-
+        let selection=$('#selection');
+       
         //stage size selected
         // let toppingSelected=toping.length;
         size.click(function(){
                 fSize.val();
                 fSize.val(1);
+                fSize.text("small")
+
         })
         size1.click(function(){
                 fSize.val();
                 fSize.val(2);
+                fSize.text("medium")
+
         })
         size2.click(function(){
                 fSize.val();
                 fSize.val(3);
+                fSize.text("large")
+
         })
         size3.click(function(){
                 fSize.val();
                 fSize.val(4);
+                fSize.text("extra large")
+
         })
         
         //end size selection
@@ -46,18 +55,25 @@ $(document).ready(function(){
         crust.click(function(){
                 fCrust.val("");
                 fCrust.val(1);
+                fCrust.text("thin")
         })
         crust1.click(function(){
                 fCrust.val("");
                 fCrust.val(2);
+                fCrust.text("thicc")
+
         })
         crust2.click(function(){
                 fCrust.val("");
                 fCrust.val(3);
+                fCrust.text("deep")
+
         })
         crust3.click(function(){
                 fCrust.val("");
                 fCrust.val(4);
+                fCrust.text("cheese filled")
+
         })
         //end crust selection
         
@@ -65,19 +81,23 @@ $(document).ready(function(){
         
         
         sub.click(function (){
-                let delTotal=document.querySelectorAll('#deliveryTotal');
                 let topping=parseInt( document.querySelectorAll('input[class="toping"]:checked').length,10);
                 let topingChecked=(topping* 50);
                 let total=(((((fSize.val()-1)*250)+500)+((fCrust.val()-1)*50))+ topingChecked)* parseInt(num.val(),10);             
+                
                 if(fSize.val() && fCrust.val() && topping !=0){
                         popup.addClass('show');
                         tot.innerHTML=total;
+
                         if(deliver.checked == false){
                                 loc.css('display','none');
+                        selection.text(parseInt(num.val(),10) +" "+ fSize.text()+' pizza with ' +fCrust.text()+ ' crust and ' +topping+" topings ");                         
+
                                 
                         }else{
-                                loc.attributes.required="required";
                                 loc.css('display','flex');
+                        selection.text(parseInt(num.val(),10) +" "+ fSize.text()+' pizza with ' +fCrust.text()+ ' crust and ' +topping+" topings ");                         
+
                         }
                 }else{
                         alert('plaese fill out all fields');
